@@ -1,4 +1,4 @@
-module go-cisco-webex-teams
+module github.com/Pirionfr/go-cisco-webex-teams
 
 go 1.14
 
