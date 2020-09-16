@@ -98,7 +98,7 @@ The files parameter is an array, which accepts multiple values to allow for futu
 */
 func (s *MessagesService) CreateMessage(messageCreateRequest *MessageCreateRequest) (*Message, *resty.Response, error) {
 
-	path := "/messages/"
+	path := "/messages"
 
 	response, err := RestyClient.R().
 		SetBody(messageCreateRequest).
@@ -188,7 +188,7 @@ Long result sets will be split into pages.
 */
 func (s *MessagesService) ListMessages(queryParams *ListMessagesQueryParams) (*Messages, *resty.Response, error) {
 
-	path := "/messages/"
+	path := "/messages"
 
 	queryParamsString, _ := query.Values(queryParams)
 
